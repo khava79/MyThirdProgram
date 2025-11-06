@@ -1,4 +1,4 @@
-package practice_3;
+package practice_2;
 
 public class Product {
     // поля

@@ -1,4 +1,4 @@
-package practice_3;
+package practice_2;
 
 public class Main1 {
     public static void main(String[] args) {
@@ -8,6 +8,7 @@ public class Main1 {
 
         car.setYear(2010);
         car.print();
+
     }
 
 }
