@@ -1,7 +1,8 @@
-package practice4;
+package practiceFour;
 
-public class SignChek {
-    public String chekSign(int number) {
+public class TaskSolver1 {
+    // задачи на if-else
+    public String checkSign(int number) {
         String signDescription = "";
         if (number > 0) {
             signDescription = "Число положительное";
@@ -9,25 +10,22 @@ public class SignChek {
             signDescription = "Число отрицательное";
         } else {
             signDescription = "Число равно нулю";
-
         }
 
         return signDescription;
     }
 
-    public int checkMax(int  a, int b) {
+    public int checkMax(int a, int b) {
         int max = b;
         if (a > b) {
-            max = a;
+            max = b;
         }
         return max;
-
 
     }
 
     public String gradeDescription(int grade) {
         String gradeDescription = "";
-
         switch (grade) {
             case 5:
                 gradeDescription = "Отлично";
@@ -48,9 +46,9 @@ public class SignChek {
         }
         return gradeDescription;
     }
-    public String chekParity(int number) {
-        String parity = "Нечетное";
 
+    public String checkParity (int number) {
+        String parity = "Нечетное";
         if (number % 2 == 0) {
             parity = "Четное";
         }
@@ -66,25 +64,24 @@ public class SignChek {
         } else {
             discount = "Скидки нет";
         }
-
         return discount;
     }
-
 
     public String testGrade(int score) {
         String grade = "";
         if (score >= 90 && score <= 100) {
             grade = "Отлично";
-        } else if (score >= 75 && score <= 89) {
+        } else if (score >= 75 & score <= 89) {
             grade = "Хорошо";
-        } else if (score >= 60 && score <= 74) {
+        } else  if (score >= 60 & score <= 74) {
             grade = "Удовлетворительно";
-        } else if (score >= 0 && score <= 60) {
+        } else if (score >= 0 & score <= 60) {
             grade = "Неудовлетворительно";
         }
         return grade;
     }
 
+    // Задачи на switch
 
     public String dayOfWeek(int day) {
         String printDay = "";
@@ -112,18 +109,11 @@ public class SignChek {
                 break;
             default:
                 printDay = "Несуществующий день";
-                break;
         }
-
         return printDay;
-
-
-
-
-
     }
 
-    public String ticketPrice(int day) {
+    public String ticketPrice (int day) {
         String ticket = "";
         switch (day) {
             case 1, 2, 3, 4, 5:
@@ -134,12 +124,9 @@ public class SignChek {
                 break;
             default:
                 ticket = "Несуществующий день";
-
         }
-
         return ticket;
     }
-
 
     public String letterGrade (int score) {
         String letter = "";
@@ -156,27 +143,24 @@ public class SignChek {
             case 6:
                 letter = "D";
                 break;
-
             default:
                 if (score >= 0)
                     letter = "F";
                 else
                     letter = "Несуществующая оценка";
                 break;
-
         }
         return letter;
-
     }
 
-    public String commandProcess (String command) {
+    public String commandProcess (String command){
         String message = "";
         switch (command) {
             case "start":
                 message = "Система запущена";
                 break;
             case "stop":
-                message = "Система остановлена";
+                message = "Система приостановлена";
                 break;
             case "restart":
                 message = "Система перезапущена";
@@ -186,12 +170,13 @@ public class SignChek {
                 break;
             default:
                 message = "Неизвестная команда";
+
         }
         return message;
 
     }
 
-    public double simpleCalculator (double a, double b, char operator) {
+    public double simpleCalculator(double a, double b, char operator) {
         double result;
         switch (operator) {
             case '+':
@@ -214,12 +199,10 @@ public class SignChek {
             default:
                 System.out.println("Неверный оператор");
                 return Double.NaN;
+
         }
         return result;
+
     }
-
-
-
-
-
 }
+
