@@ -1,4 +1,4 @@
-package practiceFour;
+package practice4;
 
 public class ForTasks {
     public static void main(String[] args) {

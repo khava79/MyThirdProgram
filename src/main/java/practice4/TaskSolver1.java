@@ -1,4 +1,4 @@
-package practiceFour;
+package practice4;
 
 public class TaskSolver1 {
     // задачи на if-else

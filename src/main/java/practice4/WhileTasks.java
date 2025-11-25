@@ -1,4 +1,4 @@
-package practiceFour;
+package practice4;
 
 public class WhileTasks {
     public static void main(String[] args) {
