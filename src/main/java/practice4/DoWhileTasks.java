@@ -43,7 +43,7 @@ public class DoWhileTasks {
         do{
             System.out.print("Введите команду для завершения работы: ");
             command = scanner.nextLine();
-        } while (!command.equals("exit"));
+        } while (!command.equalsIgnoreCase("exit"));
         System.out.println("Программа завершена.");
 
         // 5 задача
