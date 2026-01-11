@@ -38,6 +38,10 @@ public class BreakContinueTasks {
             System.out.print("Введите числа: ");
             int number = scanner.nextInt();
 
+             if (number == 0) {
+                break;
+            }
+
             if (number < 0) {
                 continue;
             }
