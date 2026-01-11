@@ -18,7 +18,7 @@ public class TaskSolver1 {
     public int checkMax(int a, int b) {
         int max = b;
         if (a > b) {
-            max = b;
+            max = a;
         }
         return max;
 
@@ -71,11 +71,11 @@ public class TaskSolver1 {
         String grade = "";
         if (score >= 90 && score <= 100) {
             grade = "Отлично";
-        } else if (score >= 75 & score <= 89) {
+        } else if (score >= 75 && score <= 89) {
             grade = "Хорошо";
-        } else  if (score >= 60 & score <= 74) {
+        } else  if (score >= 60 && score <= 74) {
             grade = "Удовлетворительно";
-        } else if (score >= 0 & score <= 60) {
+        } else if (score >= 0 && score <= 60) {
             grade = "Неудовлетворительно";
         }
         return grade;
