@@ -10,7 +10,6 @@ public class GameSettings {
     GameSettings(String gameName) {
         this.gameName = gameName;
         this.currentPlayers = 0;
-        currentPlayers++;
     }
 
     static void setMaxPlayers(int newMax) {
