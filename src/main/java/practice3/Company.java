@@ -5,6 +5,8 @@ public class Company {
     final int employeeID;
     String employeeName;
 
+    //final int employeeID = 10; - ошибка!
+
     Company(int employeeID, String employeeName) {
         this.employeeID = employeeID;
         this.employeeName = employeeName;
