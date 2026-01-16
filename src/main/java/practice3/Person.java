@@ -4,6 +4,8 @@ public class Person {
     private String firstName;
     private String lastName;
     private final String ssn;
+    
+    // private final String ssn = "SSn"; - ошибка!
 
     Person(String firstName, String lastName, String ssn) {
         this.firstName = firstName;
