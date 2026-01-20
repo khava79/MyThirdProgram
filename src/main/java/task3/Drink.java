@@ -9,8 +9,7 @@ public class Drink implements Dish {
         this.volume = volume;
     }
 
-    @Override
-    public String getDescription() {
-        return String.format("Напиток: " + name + " , объём: " + volume);
-    }
+   @Override
+public String getDescription() {
+    return String.format("Напиток: %s, объём: %.2f", name, volume);
 }
