@@ -10,7 +10,6 @@ public class HotDish implements Dish {
     }
 
     @Override
-    public String getDescription() {
-        return String.format("Горячее блюдо: " + name + " , температура: " + temperature);
-    }
+public String getDescription() {
+    return String.format("Горячее блюдо: %s, температура: %s", name, temperature);
 }
