@@ -3,14 +3,13 @@ package task8;
 public class Main {
     public static void main(String[] args) {
         Museum museum = new Museum();
-
-        Exhibit manuscript = new Manuscript();
-        museum.setExhibit(manuscript);
-        museum.showExhibit();
-
-
-        Exhibit sculpture = new Sculpture();
-        museum.setExhibit(sculpture);
+        
+        addAndShow(museum, new Manuscript());
+        addAndShow(museum, new Sculpture());
+    }
+    
+    private static void addAndShow(Museum museum, Exhibit exhibit) {
+        museum.setExhibit(exhibit);
         museum.showExhibit();
     }
 }
